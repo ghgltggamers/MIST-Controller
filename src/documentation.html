@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIST Controller Official Documentation</title>
+    <link rel="stylesheet" href="mist-controller.style.win7.css">
+</head>
+<body>
+    <nav>
+        MIST Controller Documentation - Official <input type="search" name="search" id="search-bar">
+    </nav>
+    <br>
+    <br>
+    <button>
+        Browse
+    </button>
+
+    <!-- <a href="http://google.com">google</a> -->
+</body>
+<script src="mist.controller.js"></script>
+<script>
+    // creating out first cache
+    var cache = MIST_Controller_Cache();
+
+    // adding some html to our element
+    // cache.add_Html("<b> Hellow world </b>");
+    // cache.add_Html("<b> Hellow world 2 </b>");
+    // cache.add_Html("<b> Hellow world 3 </b>");
+    // cache.add_Html("<b> Hellow world 4 </b>");
+    // cache.add_Html("<b> Hellow world 5 </b>");
+    // cache.add_Html("<b> Hellow world 6 </b>");
+
+    // cache.remove_Child(2);
+
+    // cache.add_Children_As_Html(['<b> Hellow world 1 </b>', 'hellow world 2', '<p> Hellow world 3</p>', '']);
+
+    var p = document.createElement('b');
+    p.innerHTML = "hellow world 2024";
+
+    var c = document.createElement('p');
+    c.innerHTML = "This is C language";
+
+    var cpp = document.createElement('i');
+    cpp.innerHTML = "This is C++ Language";
+
+    // cache.add_Child(p)
+    // cache.add_Child(c)
+    // cache.add_Child(cpp)
+
+    // cache.add_Children([p, c, cpp])
+    // cache.cpy(document.getElementsByTagName('nav')[0])
+
+    // cache.cpy_Children([document.getElementsByTagName('nav')[0], document.getElementsByTagName('nav')[0]]);
+
+    // cache.mov(document.getElementsByTagName('nav')[0])
+    // cache.mov_Children([document.getElementsByTagName('a')[0], document.getElementsByTagName('nav')[0]])
+
+    // console.log(cache.fetch_Children());
+
+</script>
+</html>
